@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		464BCAE324072278003803F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCAE224072278003803F2 /* AppDelegate.swift */; };
+		464BCAE524072278003803F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCAE424072278003803F2 /* SceneDelegate.swift */; };
+		464BCAEC2407227C003803F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464BCAEB2407227C003803F2 /* Assets.xcassets */; };
+		464BCAEF2407227C003803F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464BCAED2407227C003803F2 /* LaunchScreen.storyboard */; };
+		464BCAFC24072376003803F2 /* ObjectsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464BCAF724072376003803F2 /* ObjectsView.xib */; };
+		464BCAFD24072376003803F2 /* ObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCAF824072376003803F2 /* ObjectsView.swift */; };
+		464BCAFE24072376003803F2 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 464BCAF924072376003803F2 /* FilterView.xib */; };
+		464BCAFF24072376003803F2 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCAFA24072376003803F2 /* FilterView.swift */; };
+		464BCB0024072376003803F2 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCAFB24072376003803F2 /* Object.swift */; };
+		464BCB0224072467003803F2 /* MongoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464BCB0124072467003803F2 /* MongoDB.swift */; };
+		85C3A62A1D13DEAE22BC7168 /* Pods_MongoDBSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283281BC2EE213954278CCA4 /* Pods_MongoDBSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		283281BC2EE213954278CCA4 /* Pods_MongoDBSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MongoDBSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		464BCADF24072278003803F2 /* MongoDBSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongoDBSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		464BCAE224072278003803F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		464BCAE424072278003803F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		464BCAEB2407227C003803F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		464BCAEE2407227C003803F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		464BCAF02407227C003803F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464BCAF724072376003803F2 /* ObjectsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObjectsView.xib; sourceTree = "<group>"; };
+		464BCAF824072376003803F2 /* ObjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsView.swift; sourceTree = "<group>"; };
+		464BCAF924072376003803F2 /* FilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		464BCAFA24072376003803F2 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		464BCAFB24072376003803F2 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		464BCB0124072467003803F2 /* MongoDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MongoDB.swift; sourceTree = "<group>"; };
+		539EAE540D2053EBC1784015 /* Pods-MongoDBSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MongoDBSample.release.xcconfig"; path = "Target Support Files/Pods-MongoDBSample/Pods-MongoDBSample.release.xcconfig"; sourceTree = "<group>"; };
+		53DD2EEFA0915A3BB86FCC67 /* Pods-MongoDBSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MongoDBSample.debug.xcconfig"; path = "Target Support Files/Pods-MongoDBSample/Pods-MongoDBSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		464BCADC24072278003803F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C3A62A1D13DEAE22BC7168 /* Pods_MongoDBSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ECA1EB149FC7836E8749B15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53DD2EEFA0915A3BB86FCC67 /* Pods-MongoDBSample.debug.xcconfig */,
+				539EAE540D2053EBC1784015 /* Pods-MongoDBSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		464BCAD624072278003803F2 = {
+			isa = PBXGroup;
+			children = (
+				464BCAE124072278003803F2 /* MongoDBSample */,
+				464BCAE024072278003803F2 /* Products */,
+				2ECA1EB149FC7836E8749B15 /* Pods */,
+				FB81D99EC531DC63FA4C6E98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		464BCAE024072278003803F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				464BCADF24072278003803F2 /* MongoDBSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		464BCAE124072278003803F2 /* MongoDBSample */ = {
+			isa = PBXGroup;
+			children = (
+				464BCAF624072347003803F2 /* Classes */,
+				464BCAE224072278003803F2 /* AppDelegate.swift */,
+				464BCAE424072278003803F2 /* SceneDelegate.swift */,
+				464BCAEB2407227C003803F2 /* Assets.xcassets */,
+				464BCAED2407227C003803F2 /* LaunchScreen.storyboard */,
+				464BCAF02407227C003803F2 /* Info.plist */,
+			);
+			path = MongoDBSample;
+			sourceTree = "<group>";
+		};
+		464BCAF624072347003803F2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				464BCB0124072467003803F2 /* MongoDB.swift */,
+				464BCAFA24072376003803F2 /* FilterView.swift */,
+				464BCAF924072376003803F2 /* FilterView.xib */,
+				464BCAFB24072376003803F2 /* Object.swift */,
+				464BCAF824072376003803F2 /* ObjectsView.swift */,
+				464BCAF724072376003803F2 /* ObjectsView.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB81D99EC531DC63FA4C6E98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283281BC2EE213954278CCA4 /* Pods_MongoDBSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		464BCADE24072278003803F2 /* MongoDBSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464BCAF32407227C003803F2 /* Build configuration list for PBXNativeTarget "MongoDBSample" */;
+			buildPhases = (
+				A728941CB8E13667E950EB81 /* [CP] Check Pods Manifest.lock */,
+				464BCADB24072278003803F2 /* Sources */,
+				464BCADC24072278003803F2 /* Frameworks */,
+				464BCADD24072278003803F2 /* Resources */,
+				6682949E96A6A203A4457B53 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MongoDBSample;
+			productName = MongoDBSample;
+			productReference = 464BCADF24072278003803F2 /* MongoDBSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		464BCAD724072278003803F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Carlos Henrique Antunes";
+				TargetAttributes = {
+					464BCADE24072278003803F2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 464BCADA24072278003803F2 /* Build configuration list for PBXProject "MongoDBSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 464BCAD624072278003803F2;
+			productRefGroup = 464BCAE024072278003803F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				464BCADE24072278003803F2 /* MongoDBSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		464BCADD24072278003803F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464BCAFE24072376003803F2 /* FilterView.xib in Resources */,
+				464BCAFC24072376003803F2 /* ObjectsView.xib in Resources */,
+				464BCAEF2407227C003803F2 /* LaunchScreen.storyboard in Resources */,
+				464BCAEC2407227C003803F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6682949E96A6A203A4457B53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MongoDBSample/Pods-MongoDBSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MongoDBSample/Pods-MongoDBSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MongoDBSample/Pods-MongoDBSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A728941CB8E13667E950EB81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MongoDBSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		464BCADB24072278003803F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464BCB0224072467003803F2 /* MongoDB.swift in Sources */,
+				464BCAFD24072376003803F2 /* ObjectsView.swift in Sources */,
+				464BCAE324072278003803F2 /* AppDelegate.swift in Sources */,
+				464BCAFF24072376003803F2 /* FilterView.swift in Sources */,
+				464BCB0024072376003803F2 /* Object.swift in Sources */,
+				464BCAE524072278003803F2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		464BCAED2407227C003803F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				464BCAEE2407227C003803F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		464BCAF12407227C003803F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		464BCAF22407227C003803F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		464BCAF42407227C003803F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DD2EEFA0915A3BB86FCC67 /* Pods-MongoDBSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XA5ZY8ZH24;
+				INFOPLIST_FILE = MongoDBSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = carloschfa.MongoDBSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		464BCAF52407227C003803F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539EAE540D2053EBC1784015 /* Pods-MongoDBSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XA5ZY8ZH24;
+				INFOPLIST_FILE = MongoDBSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = carloschfa.MongoDBSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		464BCADA24072278003803F2 /* Build configuration list for PBXProject "MongoDBSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464BCAF12407227C003803F2 /* Debug */,
+				464BCAF22407227C003803F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464BCAF32407227C003803F2 /* Build configuration list for PBXNativeTarget "MongoDBSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464BCAF42407227C003803F2 /* Debug */,
+				464BCAF52407227C003803F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 464BCAD724072278003803F2 /* Project object */;
+}
